@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notion Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="workspace-card">
+      <p>Set up your workspace</p>
+      <div class="progress"></div>
+    </div>
+
+    <div class="nav">
+      <div class="nav-item">🔍 Search</div>
+      <div class="nav-item">🏠 Home</div>
+      <div class="nav-item">📅 Meetings</div>
+      <div class="nav-item">✨ Notion AI</div>
+      <div class="nav-item">📥 Inbox</div>
+      <div class="nav-item">📚 Library</div>
+    </div>
+
+    <div class="section">Private</div>
+    <div class="page active">📄 hello</div>
+    <div class="page">📄 The Notion Basics</div>
+    <div class="page">+ Add new</div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <h1 class="title"></h1>
+    <div id="editor" contenteditable="true"></div>
+  </div>
+
+</div>
+
+<!-- Slash Menu -->
+<div id="menu" class="hidden">
+
+  <div class="menu-title">Basic blocks</div>
+  <div class="item" data-type="text">📝 Text</div>
+  <div class="item" data-type="h1">🔠 Heading 1</div>
+  <div class="item" data-type="h2">🔡 Heading 2</div>
+  <div class="item" data-type="h3">🔤 Heading 3</div>
+
+  <div class="menu-title">Lists</div>
+  <div class="item" data-type="bullet">• Bulleted list</div>
+  <div class="item" data-type="numbered">1. Numbered list</div>
+  <div class="item" data-type="todo">☑ To-do list</div>
+
+  <div class="menu-title">Media</div>
+  <div class="item" data-type="image">🖼 Image</div>
+  <div class="item" data-type="quote">❝ Quote</div>
+  <div class="item" data-type="code">💻 Code</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
